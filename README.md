@@ -4,5 +4,5 @@
 Склонировать репозиторий командой git clone https://github.com/Ria5282/lendovo_test.
 Команды выполняются из директории приложения.
 
-Пример добавления команды:
+Пример запуска программы:
 php app.php write {log,verbose} [profile={id,role,email}] {pos,len} [set=unicod] {mod}
