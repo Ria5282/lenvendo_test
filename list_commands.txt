@@ -1,0 +1,8 @@
+create {log} {verbose} {force} [profile=id] [profile=role] [profile=email]
+reg {log} {verbose} [profile=id] [profile=role] [profile=email]
+read {log} {verbose} [profile=id] [profile=role] [profile=email] {pos} {len} [set=unicod] {{mod}}
+read {help}
+read {help}
+clean {log} {verbose} [profile=id] [profile=role] [profile=email] {pos} {len} [set=unicod] {{mod}}
+true {log} {verbose} [profile=id] [profile=role] [profile=email] {pos} {len} [set=unic
+write {log} {verbose} [profile=id] [profile=role] [profile=email] {pos} {len} [set=unicod] {{mod}}
