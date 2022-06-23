@@ -12,12 +12,13 @@ class LibApp
         
         if(count($list_command_array) == 1)
         {
-           echo '***Empty command list. Add new command***' . PHP_EOL; 
+           echo 'Empty command list. Add new command!' . PHP_EOL; 
         }
         else
         {
            foreach($list_command_array as $one_command)
            {
+               if(strlen($one_command) == 0) { break; }
                $one_command_array = explode(' ', $one_command);
                $this->showOneCommandHelpList($one_command_array[0]);
            }
@@ -71,6 +72,7 @@ class LibApp
 
         /* Вывод описания команды */
         echo 'Called command: ' . $command_name . PHP_EOL;
+        echo PHP_EOL;
         echo 'Arguments:' . PHP_EOL;
         foreach($arguments as $one_argument) { echo '   ' . '- ' . $one_argument . PHP_EOL; }
         echo PHP_EOL;
@@ -83,7 +85,7 @@ class LibApp
                echo '      ' . '- ' . $one_param . PHP_EOL; 
             }
         }
-        
+        echo PHP_EOL . PHP_EOL;
         return true;
     }
 
