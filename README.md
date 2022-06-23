@@ -6,21 +6,3 @@
 
 Пример добавления команды:
 php app.php write {log,verbose} [profile={id,role,email}] {pos,len} [set=unicod] {mod}
-
-Пример вывода описания команды:
-php app.php write {help}
-Called command: write
-Arguments:
-   - log
-   - verbose
-   - pos
-   - len
-   - mod
-
-Options:
-   - profile
-      - id
-      - role
-      - email
-   - set
-      - unicod
