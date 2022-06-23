@@ -8,7 +8,6 @@ $libApp = new LibApp();
 команд и их описания. */
 if (count($argv) == 1) 
 {
-   echo '***Show full helplist***' . PHP_EOL;
    $libApp->showFullHelpList();
 } 
 
